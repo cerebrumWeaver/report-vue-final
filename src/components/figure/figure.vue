@@ -1,8 +1,10 @@
 <template>
-    <el-scrollbar class="demo-image__lazy" style="margin: 20px;">
-            <el-image v-for="(url, index) in urls" :key="index"  :src="require('@/assets/content_img/' + url)" lazy :preview-src-list="srcList" fit="scale-down" >
-            </el-image>
-    </el-scrollbar>
+  <el-scrollbar class="demo-image__lazy" style="margin: 20px;">
+<!--    <div class="el-image-father">-->
+      <el-image v-for="(url, index) in urls" :key="index"  :src="require('@/assets/content_img/' + url)" lazy :preview-src-list="srcList" fit="scale-down" >
+      </el-image>
+<!--    </div>-->
+  </el-scrollbar>
 </template>
 
 <script lang="ts">
@@ -46,14 +48,20 @@
 </script>
 <style scoped lang="scss">
     .demo-image__lazy{
-        height: 300px;
-        overflow-y: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      overflow-y: auto;
+
     }
     .demo-image__lazy .el-image{
         display: block;
         min-height: 200px;
         margin-bottom: 10px;
-      width: auto; height: 300px;
+      width: 300px;
+      //height: 300px;
     }
     .demo-image__lazy .el-image:last-child{
         margin-bottom: 0;
