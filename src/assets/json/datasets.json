@@ -1,0 +1,516 @@
+{
+  "1": {
+    "title": "1 项目信息",
+    "1_1": {
+      "title": "1.1 项目简介",
+      "info": [
+        "hahaha0000000本报告为解螺旋真核转录组标准项目结题报告。本项目使用DNBSEQ平台一共测了12个样品，每个样品平均产出7.64G数据。样品比对基因组的平均比对率为 93.61% ，比对基因集的平均比对率为63.13% ；一共检测到17441个基因。"
+      ]
+    },
+    "1_2": {
+      "title": "1.2 分析方案",
+      "info": [
+        "本项目共20个样本。下表为转录组测序分析结果统计表:"
+      ],
+      "table_title": "表1 样品分析结果统计表",
+      "table_content": [
+        {
+          "Sample": "A12",
+          "TotalCleanRead": "46783786",
+          "MappingRate": "0.9674"
+        },
+        {
+          "Sample": "A13",
+          "TotalCleanRead": "47153664",
+          "MappingRate": "0.9674"
+        },
+        {
+          "Sample": "A14",
+          "TotalCleanRead": "46841830",
+          "MappingRate": "0.9685"
+        },
+        {
+          "Sample": "A17",
+          "TotalCleanRead": "47062958",
+          "MappingRate": "0.9630"
+        },
+        {
+          "Sample": "A20",
+          "TotalCleanRead": "47217498",
+          "MappingRate": "0.9630"
+        },
+        {
+          "Sample": "A21",
+          "TotalCleanRead": "47217498",
+          "MappingRate": "0.9724"
+        },
+        {
+          "Sample": "A22",
+          "TotalCleanRead": "47359564",
+          "MappingRate": "0.9724"
+        },
+        {
+          "Sample": "A22000000",
+          "TotalCleanRead": "47359564000000",
+          "MappingRate": "0.9724000000"
+        }
+      ],
+      "table_descriptions": [
+        "（1）Total clean reads：样品测得的clean reads数目；",
+        "（2）Mapping rate：比对到参考基因组reads比例；",
+        "（3）Total gene number：检测到表达的基因数目；",
+        "（4）Group：做差异比较分析的分组；",
+        "（5）Description：样品描述。"
+      ],
+      "result": [
+        "物种名：Homo_sapiens",
+        "来源：NCBI",
+        "参考基因组版本：GCF_000001405.39_GRCh38.p13MainMenu:分析结果"
+      ]
+    },
+    "1_3": {
+      "title": "1.3 差异表达分析（Table）",
+      "info": [
+        "下表为基因差异表达分析结果统计表:"
+      ],
+      "table_title": "表2 差异表达分析结果统计表",
+      "table_content": {},
+      "table_descriptions": [
+        "（1）Total DE：存在显著差异表达的基因数目；",
+        "（2）Up DE：在处理组中显著上调表达的基因数目；",
+        "（3）Down DE：在处理组中显著下调表达的基因目。"
+      ],
+      "result": [
+        "分析结果统计下载链接：",
+        "分析结果统计信息"
+      ],
+      "result_download": [
+        "CleanBases.pdf",
+        "CleanBases.png",
+        "filter.stat.xls",
+        "filter_rate.pdf",
+        "filter_rate.png",
+        "Q30.pdf",
+        "Q30.png",
+        "readme.doc"
+      ],
+      "result2": [
+        "差异表达基因结果下载链接：",
+        "差异表达基因结果下载："
+      ],
+      "result_download2": []
+    },
+    "1_4": {
+      "title": "1.4 PCA主成分分析图（Figure）",
+      "info": [
+        "主成分分析（Principal Component Analysis，PCA）是将多个变量通过降维为少数几个相互独立的变量（即主成分），同时尽可能多地保留原始数据信息的一种多元统计分析方法。在转录组的分析中，PCA将样本所包含的大量基因表达量信息降维为少数几个互相无关的主成分，以进行样本间的比较，方便找出离群样品、判别相似性高的样品簇等。",
+        "说明： 图中不同颜色代表不同 group 中的样本，样本间相似度越高则在图中越聚集，反之样本间相似度越低则空间距离越远。"
+      ],
+      "urls": [
+          "1.4.png",
+          "1.6.png"
+      ],
+      "figure": "",
+      "figure_title": "图1 PCA主成分分析图",
+      "figure_descriptions": [
+      ],
+      "result": [
+        "PCA主成分分析图下载链接：",
+        "PCA主成分分析图下载链接："
+      ],
+      "result_download": [],
+      "result2": [
+      ],
+      "result_download2": []
+    },
+    "1_5": {
+      "title": "1.5 PCA主成分分析表（Table）",
+      "info": [
+      ],
+      "urls": [
+
+      ],
+      "table_title": "表3 样品分析结果统计表",
+      "table_content": {},
+      "table_descriptions": [
+      ],
+      "result": [
+        "PCA主成分分析图下载链接："
+      ],
+      "result_download": [
+        "CleanBases.pdf",
+        "CleanBases.png",
+        "filter.stat.xls",
+        "filter_rate.pdf",
+        "filter_rate.png",
+        "Q30.pdf",
+        "Q30.png",
+        "readme.doc"
+      ],
+      "result2": [
+      ],
+      "result_download2": []
+    },
+    "1_6": {
+      "title": "1.6 火山图（Figure）",
+      "info": [
+        "火山图可以直观反映差异表达基因的整体分布情况。以log2(foldchange）为横坐标，-log10(P.adj）为纵坐标，对差异表达分析中所有的基因进行火山图绘制。",
+        "作图软件：R (3.6.3版本) (统计分析与可视化)；",
+        "R包：主要为 ggplot2 (用于可视化)；",
+        "图中参数：LogFC > 1 & 图中的p值 < 0.05；"
+      ],
+      "urls": [
+        "1.6.png"
+      ],
+      "figure": "",
+      "figure_title": "图2 差异表达基因火山图",
+      "figure_descriptions": [
+        "注：横坐标为比较组中差异基因表达倍数（Fold change）的对数值，其绝对值越大，基因差异倍数越大；纵坐标为表达量变化的统计学显著程度的负对数值，对应值越大，差异越显著；每个点代表一个特定的基因，显著上调、显著下调和没有显著差异表达的基因分别用不同颜色标记。"
+      ],
+      "result": [
+        "差异表达基因火山图下载链接：",
+        "差异表达基因火山图下载链接："
+      ],
+      "result_download": [],
+      "result2": [
+      ],
+      "result_download2": []
+    },
+    "1_7": {
+      "title": "1.7 热 图（Figure）",
+      "info": [
+        "聚类分析往往用于反映不同实验条件下样本差异表达基因的变化模式。功能相关的基因在相同条件下通常具有相似的表达模式，例如被共同的转录因子调控的基因，或其产物构成同一个蛋白复合体的基因，或参与相同生物学过程的基因。我们利用R包，对差异表达基因和不同样本/实验条件进行层次聚类分析，同时利用K-means算法将差异基因分成若干个表达模式相近的集合，同一个集合中的基因在相同的条件下具有相似的表达变化趋势。"
+      ],
+      "urls": [
+        "1.7.png"
+      ],
+      "figure": "",
+      "figure_title": "图3 差异基因聚类图",
+      "figure_descriptions": [
+        "注：根据差异表达基因在每个样品里的表达量（FPKM值），取以2为底的对数后，计算欧氏距离，再利用系统聚类法（Hierarchical Cluster），最终得到样品的整体聚类结果。在图中，行为基因，列为样品，基因在不同样品中的表达量是否有差异可以通过热图颜色的变化体现。"
+      ],
+      "result": [
+        "差异基因聚类图下载链接：",
+        "差异基因聚类图下载链接："
+      ],
+      "result_download": [],
+      "result2": [
+      ],
+      "result_download2": []
+    }
+  },
+  "2": {
+    "title": "2 功能富集分析",
+    "2_1": {
+      "title": "2.1 GO富集分析",
+      "info": [
+        "Gene ontology（基因本体论，GO）是一个国际标准化的基因功能分类体系，提供了一套动态更新的标准词汇表来全面描述生物体中基因核基因产物的属性。GO总共有三个本体（ontology），分别描述基因的分子功能（molecular function）、细胞成分（cellular component）、生物学过程（biological process）。GO的基本单位是term（词条、节点），每个term都对应一个属性。GO功能显著性富集分析，首先把所有显著性差异表达基因向Gene ontology数据库的各term映射，计算每个term的基因数目，然后应用超几何检验，找出与整个基因组背景相比，在显著性差异表达基因中显著富集的GO条目。通过GO功能显著性富集分析能确定差异表达基因行使的主要生物学功能。"
+      ],
+      "2_1_1": {
+        "title": "2.1.1 GO富集分析表（Table）"
+      },
+      "2_1_2": {
+        "title": "2.1.2 GO富集分析柱状图（Figure）",
+        "info": [
+          "为了直观的展示差异表达基因集合的GO统计结果，可以根据上表统计结果，绘制柱状图，结果如下："
+        ],
+        "urls": [
+          "2.1.2.png"
+        ],
+        "figure": "",
+        "figure_title": "图4 差异表达基因的GO统计柱状图",
+        "figure_descriptions": [
+          "注：横坐标为GO Term，左纵坐标为基因数目所占百分比，右纵坐标为基因数目。此图展示的是在显著上调或显著下调表达基因在二级GO Term的富集情况。"
+        ],
+        "result": [
+          "差异表达基因的GO统计柱状图下载链接：",
+          "差异表达基因的GO统计柱状图下载链接："
+        ],
+        "result_download": [],
+        "result2": [
+        ],
+        "result_download2": []
+      },
+      "2_1_3": {
+        "title": "2.1.3 GO富集分析气泡图（Figure）",
+        "info": [
+          "对于每个比较组而言，展示q值富集的GO条目以及富集的程度，结果展示如下图："
+        ],
+        "urls": [
+          "2.1.3.png"
+        ],
+        "figure": "",
+        "figure_title": "图5 单个组GO条目q值富集图",
+        "figure_descriptions": [
+          "注：横坐标代表富集比例（rich ratio），其计算公式为：(该通路的差异基因/所有的差异基因)/(注释到该通路的基因/所有能被注释到的基因) 。纵坐标代表不同的GO条目。每个点的颜色表示该GO条目的富集程度，颜色越趋近于红色表示富集程度越高（q值越小）。每个点的大小表示富集到该GO条目的基因的多少，点越大表示富集到该GO条目的基因越多，反之则越少。为了便于展示，当GO条目少于10条时，展示全部条目；多于10条时，示例图仅展示其中的10个条目，其他结果请查看相应结果文件。"
+        ],
+        "result": [
+          "单个组GO条目q值富集图下载链接:",
+          "单个组GO条目q值富集图下载链接"
+        ],
+        "result_download": [],
+        "result2": [
+        ],
+        "result_download2": []
+      },
+      "2_1_4": {
+        "title": "2.1.4 GO富集分析网络图（Figure）",
+        "info": [
+        ],
+        "urls": [
+          "2.1.4.png"
+        ],
+        "figure": "",
+        "figure_title": "图6 GO富集分析网络图",
+        "figure_descriptions": [
+        ],
+        "result": [
+          "GO富集分析网络图下载链接"
+        ],
+        "result_download": [],
+        "result2": [
+        ],
+        "result_download2": []
+      }
+    },
+    "2_2": {
+      "title": "2.2 KEGG富集分析",
+      "info": [
+        "Kyoto Encyclopedia of Genes and Genomes（京都基因与基因组百科全书，KEGG）是一个整合了基因组、化学和系统功能信息的综合数据库。KEGG下属4个大类和17个子数据库，其中有一个数据库叫做KEGG Pathway，专门存储不同物种中的基因通路的信息，也是用的最多的一个。因此，KEGG就被当作一个通路数据库了。",
+        "在生物体内，不同基因相互协调行使生物学功能，基于Pathway的分析有助于进一步了解基因的生物学功能。Pathway显著性富集分析以KEGG Pathway为单位，应用超几何检验，找出与整个基因组背景相比，在显著性差异表达基因中显著性富集的Pathway。通过Pathway显著性富集能确定差异表达基因参与的最主要生化代谢途径和信号转导途径。"
+      ],
+      "2_2_1": {
+        "title": "2.2.1 KEGG富集分析表（Table）",
+        "info": [
+        ],
+        "table_title": "表4 KEGG结果示例表",
+        "table_content": [
+        ],
+        "table_descriptions": [
+          "（1）Name：通路的名称；",
+          "（2）Map：进行富集的map条目；",
+          "（3）Count1，Count2，Count3，Count4：进行Fisher检验的四个数据，分别为上面超几何检验公式里的m，M-m，n-m，N-n-M+m；",
+          "（4）p：检验后的p值；",
+          "（5）q：多重检验校正的p值；",
+          "（6）Gene_in_DE：差异表达基因中注释到该通路的差异表达基因名称；",
+          "（7）Up_Gene：差异表达基因中注释到该通路的上调基因；",
+          "（8）Up_Count：差异表达基因中注释到该通路的上调基因的个数；",
+          "（9）Down_Gene：差异表达基因中注释到该通路的下调基因；",
+          "（10）Down_Count:差异表达基因中注释到该通路的下调基因的个数；",
+          "（11）Links：该通路的KEGG数据库链接；",
+          "（12）Result：该通路是否显著。"
+        ],
+        "result": [
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      },
+      "2_2_2": {
+        "title": "2.2.2 KEGG富集分析柱状图（Figure）",
+        "info": [
+        ],
+        "urls": [
+          "2.2.2.png"
+        ],
+        "figure": "",
+        "figure_title": "图7 KEGG富集分析柱状图",
+        "figure_descriptions": [
+        ],
+        "result": [
+          "KEGG富集分析柱状图"
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      },
+      "2_2_3": {
+        "title": "2.2.3 KEGG富集分析气泡图（Figure）",
+        "info": [
+          "对于每个比较组进行q值的KEGG条目的分析，结果展示如下图："
+        ],
+        "urls": [
+          "2.2.3.png"
+        ],
+        "figure": "",
+        "figure_title": "图8 单个组的KEGG富集q值结果图",
+        "figure_descriptions": [
+          "注：横坐标为Rich Ritio，纵坐标表示KEGG pathway名称，点的大小代表此pathway中差异基因数量，点的颜色代表每个点表示该KEGG条目的富集程度，颜色越趋近于红色表示富集程度越高。"
+        ],
+        "result": [
+          "单个组的KEGG富集q值结果图下载链接：",
+          "单个组的KEGG富集q值结果图下载链接："
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      },
+      "2_2_4": {
+        "title": "2.2.4 KEGG富集分析网络图（Figure）",
+        "info": [
+        ],
+        "urls": [
+          "2.2.4.png"
+        ],
+        "figure": "",
+        "figure_title": "图9 KEGG富集分析网络图",
+        "figure_descriptions": [
+        ],
+        "result": [
+          "单个组的KEGG富集q值结果图下载链接："
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      },
+      "2_2_5": {
+        "title": "2.2.5 KEGG富集分析通路图（Figure）",
+        "info": [
+          "对每个比较的通路图进行注释，得到的结果如下图所示，红色表示上调差异基因注释在KO上，该KO显示为红色，反之，绿色表示该KO下调。",
+          "包含差异基因的KEGG代谢通路图如下："
+        ],
+        "urls": [
+          "2.2.5.1.png",
+          "2.2.5.2.png",
+          "2.2.5.3.png",
+          "2.2.5.4.png"
+        ],
+        "figure": "",
+        "figure_title": "图10 包含差异基因的KEGG代谢通路图",
+        "figure_descriptions": [
+          "注：上调差异基因注释在KO上，该KO显示为红色，反之，下调基因对应的KO显示为绿色。KEGG pathway中不同框内数字代表酶的EC编号（EC number），而整个通路由多种酶催化的复杂的生化反应构成，此通路图中与差异表达基因相关的酶均用不同的颜色标出，根据研究目的可重点研究某些关键代谢通路相关基因的差异表达情况，从参与代谢的角度揭示转录水平的调控机制。"
+        ],
+        "result": [
+          "包含差异基因的KEGG代谢通路图下载链接：",
+          "包含差异基因的KEGG代谢通路图下载链接："
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      }
+    },
+    "2_3": {
+      "title": "2.3 GSEA富集分析",
+      "info": [
+        "Gene Set Enrichment Analysis（基因基因富集分析，GSEA）用来评估一个预先定义的基因集【已知功能的基因集，可以是GO注释、MsigDB的注释，或者其他符合格式的基因集定义】的基因在与表型相关度排序的基因表中的分布趋势，从而判断其对表型的贡献。对基因根据其表型的关联度（也可以理解为表达值的变化）从大到小排序，然后判断基因集内每条注释下的基因是否富集于表型相关度配许后基因表的上部或下部，从而判断基因集内基因协同变化对表型变化的影响。",
+        "GO和KEGG富集分析是先筛选差异基因，再判断差异基因在哪些注释的通路存在富集；这涉及到阈值的设定，存在一定主观性，且只能用于表达变化较大的基因，即我们丁语的显著差异基因。而GSEA不局限于差异基因，从基因集的富集角度出发，更容易囊括细微但协调性的变化对生物通路的影响。"
+      ],
+      "2_3_1": {
+        "title": "2.3.1 GSEA富集分析表（Table）",
+        "info": [
+        ],
+        "table_title": "表5 GSEA富集分析表",
+        "table_content": [
+        ],
+        "table_descriptions": [
+        ],
+        "result": [
+          "GSEA富集分析表下载链接：",
+          "GSEA富集分析表下载链接"
+        ],
+        "result_download": [],
+        "result2": [
+        ],
+        "result_download2": []
+      },
+      "2_3_2": {
+        "title": "2.3.2 GSEA富集分析图（Figure）",
+        "info": [
+          "我们获取了在不同条件下差异表达的基因，通常希望获取该基因集的功能概况，以便更好地了解潜在的生物学过程。基因集富集分析（GSEA）可以分析特定基因集（如关注的GO条目或KEGG通路）在两个生物学状态（如癌症与对照）中是否存在差异。而转录组学技术和蛋白质组学结果通常可以鉴定出数千种用于分析的基因。",
+          "传统的富集分析不考虑基因表达量的变化趋势，其算法的核心只关注这些差异表达基因的分布是否跟随机抽样得到的分布一致，并且需要主观设置差异基因筛选阈值，可能过滤掉有用信息，不能反应整体情况。而GSEA富集分析则考虑了差异的上调下调，并且考虑到所有基因，无须主观设置过滤阈值。",
+          "结果展示如下图"
+        ],
+        "urls": [
+          "2.3.2.png"
+        ],
+        "figure": "",
+        "figure_title": "图11 GSEA富集分析图",
+        "figure_descriptions": [
+        ],
+        "result": [
+          "GSEA富集分析图下载链接：",
+          "GSEA富集分析图下载链接"
+        ],
+        "result_download": [],
+        "result2": [],
+        "result_download2": []
+      }
+    }
+  },
+  "3": {
+    "title": "3 互作网络分析",
+    "info": [
+      "蛋白质-蛋白质相互作用（protein-protein interaction, PPI）是指两个或两个以上的蛋白质分子通过非共价键形成蛋白质复合体（protein complex）的过程，来参与生物信号传递、基因表达调节、能量和物质代谢及细胞周期调控等生命过程的各个环节。研究蛋白之间的相互作用网络，有助于挖掘核心的调控基因。目前已经有很多的蛋白质相互作用的数据库，而STRING数据库绝对是其中覆盖的物种最多，相互作用信息做大的一个。STRING数据库是常用的蛋白质互作网络数据库，收录多个物种预测的和实验验证的蛋白质-蛋白质互作。在本项目中，我们使用了STRING数据库在线工具，提取显著差异基因蛋白质-蛋白质相互作用（PPI），以构建显著差异基因的PPI网络。经STRING数据库筛选后的PPI网络，由R语言（igragh包）进行可视化。"
+    ],
+    "3_1": {
+      "title": "3.1 蛋白互作网络表（Table）",
+      "info": [
+      ],
+      "table_title": "表6 蛋白互作网络表",
+      "table_content": [
+      ],
+      "table_descriptions": [
+      ],
+      "result": [
+        "蛋白互作网络表下载链接"
+      ],
+      "result_download": [],
+      "result2": [
+      ],
+      "result_download2": []
+    },
+    "3_2": {
+      "title": "3.2 蛋白互作网络图（Figure）",
+      "info": [
+        "通过蛋白互作网络分析，可以发现与不同处理或疾病相关的一些关键基因，对这些关键的基因进行功能分析，可以从代谢水平上了解不同处理对基因表达的影响或疾病的发生或发展机制。STRING是收录多个物种预测的和实验验证的蛋白质-蛋白质互作的数据库，包括直接的物理互作和间接的功能相关。针对数据库中包含的物种，结合差异表达分析结果和数据库收录的互作关系对，可直接将差异表达基因集（比如差异基因List）映射到该物种的蛋白互作网络，构建差异表达基因互作网络。",
+        "我们提供参考物种蛋白互作网络数据文件（蛋白互作网络参考数据集）和目标基因集，构建蛋白互作网络的网络数据文件可以直接导入Cytoscape软件(Shannon, et al. , 2003)，并根据目标基因集中的基因属性对网络进行可视化编辑。Cytoscape软件使用方法可参考我们提供的使用说明文档（cytoscape.docx, 见下方链接）。您可以针对一些网络的拓扑属性进行统计和标示作图，若某一节点（即基因）相连的边（即基因间互作关系）越多，则表明这些节点会位于较为核心的位置(hub节点)。互作网络图中节点的颜色与此基因的上下调特性相关，若基因上调，则其节点为黄色；若基因下调，则其节点为青色。根据不同的研究目的和需求，您还可以在网络图中进行调整节点位置和颜色、标注表达量水平等操作。详细可参考我们提供的使用说明文档（见网页版下载链接处）。将文件导入Cytoscape软件后的效果图如下："
+      ],
+      "urls": [
+        "3.2.png"
+      ],
+      "figure": "",
+      "figure_title": "图12 差异基因蛋白互作网络示例图",
+      "figure_descriptions": [
+        "注：节点表示基因，边表示两基因间存在互作关系。与节点相连的边越多，其连通性 （度） 越大，表明该节点基因在该网络中的重要性越强。网络图中上调和下调的基因分别用黄色和蓝色标示。"
+      ],
+      "result": [
+        "差异基因蛋白互作网络图下载链接：",
+        "差异基因蛋白互作网络图下载链接"
+      ],
+      "result_download": [],
+      "result2": [
+        "Cytoscape软件使用方法下载链接：",
+        "Cytoscape软件使用方法下载链接："
+      ],
+      "result_download2": []
+    }
+  },
+  "4": {
+    "title": "4 附录",
+    "4_1": {
+      "title": "4.1 参考文献",
+      "info": [
+        "Florea, L., Song, L. & Salzberg, S. L. Thousands of exon skipping events differentiate among splicing patterns in sixteen human tissues. F1000Research (2013).",
+        "Langmead, B., Trapnell, C., Pop, M. & Salzberg, S. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biology 10, R25-10 (2009).",
+        "Li, H. et al. The sequence Alignment/Map format and SAMtools. Bioinformatics (Oxford, England) 25, 2078-2079 (2009).",
+        "Shannon, P. et al. Cytoscape: A software environment for integrated models of biomolecular interaction networks. Genome Research 13, 2498-2504 (2003).",
+        "Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15(12):550 (2014).",
+        "Sirén J, Välimäki N, Mäkinen V.Indexing Graphs for Path Queries with Applications in Genome Research. IEEE/ACM Trans Comput Biol Bioinform. 11(2):375-88 (2014)",
+        "Thorvaldsdóttir, H., Robinson, J.T. & Mesirov, J. P. Integrative genomics viewer (IGV): high-performance genomics data visualization and exploration. Briefings in bioinformatics 14, 178-192 (2013).",
+        "Trapnell, C. et al. Transcript assembly and quantification by RNA-seq reveals unannotated transcripts and isoform switching during cell differentiation. Nature Biotechnology 28, 511-515 (2010).",
+        "Trapnell, C., Pachter, L. & Salzberg, S. L. TopHat: discovering splice junctions with RNA-seq. Bioinformatics 25, 1105-1111 (2009).",
+        "Wang, L., Feng, Z., Wang, X., Wang, X. & Zhang, X. DEGseq: an r package for identifying differentially expressed genes from RNA-seq data. Bioinformatics 26, 136-138 (2010)."
+      ]
+    },
+    "4_2": {
+      "title": "4.2 软件与方法说明",
+      "info": [
+        "本项目所用分析方法和软件中/英文说明见方法文档。",
+        "DEGSeq、DESeq2软件的方法的说明如下：",
+        "DEGSeq：基于count值服从二项分布的假设，借鉴MAplot理论，估计M值得近似正态分布，从而计算每个基因在两个样品中不差异表达的概率值p-value，并通过Benjamini矫正或Storey矫正获得q-value（FDR）；",
+        "DESeq2: 基于count值服从负二项分布假设，估计样品和基因特异的深度参数，且对离差利用线性回归进行了“收缩”，主要考虑相同表达水平的基因可能具有相似的离差以及每个基因的表达特性。利用线性回归估计基因在各样品中的表达强度，并用Wald test计算每个基因在两组样品中不差异表达的概率值p-value，并通过BH方法对p-value进行校正得到q-value（FDR）。",
+        "转录组分析的各种软件说明及分析方法的中英文版介绍下载链接："
+      ]
+    }
+  }
+}

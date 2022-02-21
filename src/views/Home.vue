@@ -2,7 +2,6 @@
 <template>
     <!--    <div id="home">-->
     <el-container>
-
         <el-aside width="280px" style="background-color: var(--el-menu-background-color);" v-show="toggle">
             <el-scrollbar>
             <el-menu efault-active="0"
