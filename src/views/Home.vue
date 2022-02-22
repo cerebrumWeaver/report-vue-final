@@ -13,12 +13,10 @@
               <a @click='goAnchor("page-11")'><el-menu-item index="1-1">1.1 项目简介</el-menu-item></a>
               <a @click='goAnchor("page-12")'><el-menu-item index="1-2">1.2 分析方案</el-menu-item></a>
               <a @click='goAnchor("page-13")'><el-menu-item index="1-3">1.3 差异表达分析</el-menu-item></a>
-              <el-menu-item index="1-4"><a @click='goAnchor("page-14")'>1.4 PCA主成分分析图（Figure）</a>
-              </el-menu-item>
-              <el-menu-item index="1-5"><a @click='goAnchor("page-15")'>1.5 PCA主成分分析表（Table）</a>
-              </el-menu-item>
-              <el-menu-item index="1-6"><a @click='goAnchor("page-16")'>1.6 火山图（Figure）</a></el-menu-item>
-              <el-menu-item index="1-7"><a @click='goAnchor("page-17")'>1.7 热 图（Figure）</a></el-menu-item>
+              <a @click='goAnchor("page-14")'><el-menu-item index="1-4">1.4 PCA主成分分析图（Figure）</el-menu-item></a>
+              <a @click='goAnchor("page-15")'><el-menu-item index="1-5">1.5 PCA主成分分析表（Table）</el-menu-item></a>
+              <a @click='goAnchor("page-16")'><el-menu-item index="1-6">1.6 火山图（Figure）</el-menu-item></a>
+              <a @click='goAnchor("page-17")'><el-menu-item index="1-7">1.7 热 图（Figure）</el-menu-item></a>
               </el-submenu>
           </el-menu-item-group>
 
@@ -29,34 +27,23 @@
               </template>
               <el-submenu index="2-1">
                 <template #title><i class="el-icon-menu"></i>2.1 GO富集分析</template>
-                <el-menu-item index="2-1-1"><a @click='goAnchor("page-211")'>2.1.1 GO富集分析表</a>
-                </el-menu-item>
-                <el-menu-item index="2-1-2"><a @click='goAnchor("page-212")'>2.1.2 GO富集分析柱状图</a>
-                </el-menu-item>
-                <el-menu-item index="2-1-3"><a @click='goAnchor("page-213")'>2.1.3 GO富集分析气泡图</a>
-                </el-menu-item>
-                <el-menu-item index="2-1-4"><a @click='goAnchor("page-214")'>2.1.4 GO富集分析网络图</a>
-                </el-menu-item>
+                <a @click='goAnchor("page-211")'><el-menu-item index="2-1-1">2.1.1 GO富集分析表</el-menu-item></a>
+                <a @click='goAnchor("page-212")'><el-menu-item index="2-1-2">2.1.2 GO富集分析柱状图</el-menu-item></a>
+                <a @click='goAnchor("page-213")'><el-menu-item index="2-1-3">2.1.3 GO富集分析气泡图</el-menu-item></a>
+                <a @click='goAnchor("page-214")'><el-menu-item index="2-1-4">2.1.4 GO富集分析网络图</el-menu-item></a>
               </el-submenu>
               <el-submenu index="2-2">
                 <template #title><i class="el-icon-menu"></i>2.2 KEGG富集分析</template>
-                <el-menu-item index="2-2-1"><a @click='goAnchor("page-221")'>2.2.1 KEGG富集分析表</a>
-                </el-menu-item>
-                <el-menu-item index="2-2-2"><a @click='goAnchor("page-222")'>2.2.2 KEGG富集分析柱状图</a>
-                </el-menu-item>
-                <el-menu-item index="2-2-3"><a @click='goAnchor("page-223")'>2.2.3 KEGG富集分析气泡图</a>
-                </el-menu-item>
-                <el-menu-item index="2-2-4"><a @click='goAnchor("page-224")'>2.2.4 KEGG富集分析网络图</a>
-                </el-menu-item>
-                <el-menu-item index="2-2-5"><a @click='goAnchor("page-225")'>2.2.5 KEGG富集分析通路图</a>
-                </el-menu-item>
+                <a @click='goAnchor("page-221")'><el-menu-item index="2-2-1">2.2.1 KEGG富集分析表</el-menu-item></a>
+                <a @click='goAnchor("page-222")'><el-menu-item index="2-2-2">2.2.2 KEGG富集分析柱状图</el-menu-item></a>
+                <a @click='goAnchor("page-223")'><el-menu-item index="2-2-3">2.2.3 KEGG富集分析气泡图</el-menu-item></a>
+                <a @click='goAnchor("page-224")'><el-menu-item index="2-2-4">2.2.4 KEGG富集分析网络图</el-menu-item></a>
+                <a @click='goAnchor("page-225")'><el-menu-item index="2-2-5">2.2.5 KEGG富集分析通路图</el-menu-item></a>
               </el-submenu>
               <el-submenu index="2-3">
                 <template #title><i class="el-icon-menu"></i>2.3 GSEA富集分析</template>
-                <el-menu-item index="2-3-1"><a @click='goAnchor("page-231")'>2.3.1 GSEA富集分析表</a>
-                </el-menu-item>
-                <el-menu-item index="2-3-2"><a @click='goAnchor("page-232")'>2.3.2 GSEA富集分析图</a>
-                </el-menu-item>
+                <a @click='goAnchor("page-231")'><el-menu-item index="2-3-1">2.3.1 GSEA富集分析表</el-menu-item></a>
+                <a @click='goAnchor("page-232")'><el-menu-item index="2-3-2">2.3.2 GSEA富集分析图</el-menu-item></a>
               </el-submenu>
             </el-submenu>
           </el-menu-item-group>
@@ -64,16 +51,16 @@
           <el-menu-item-group index="3">
             <el-submenu index="3">
               <template #title><i class="el-icon-menu"></i>3 互作网络分析</template>
-              <el-menu-item index="3-1"><a @click='goAnchor("page-31")'>3.1 蛋白互作网络表</a></el-menu-item>
-              <el-menu-item index="3-2"><a @click='goAnchor("page-32")'>3.2 蛋白互作网络图</a></el-menu-item>
+              <a @click='goAnchor("page-31")'><el-menu-item index="3-1">3.1 蛋白互作网络表</el-menu-item></a>
+              <a @click='goAnchor("page-32")'><el-menu-item index="3-2">3.2 蛋白互作网络图</el-menu-item></a>
             </el-submenu>
           </el-menu-item-group>
           <el-menu-item-group index="4">
               <el-submenu index="4">
                   <template #title><i class="el-icon-menu"></i>4 附录</template>
-                  <el-menu-item index="4-1"><a @click='goAnchor("page-41")'>4.1 参考文献</a></el-menu-item>
-                  <el-menu-item index="4-2"><a @click='goAnchor("page-42")'>4.2 软件与方法说明</a></el-menu-item>
-                  <el-menu-item index="4-3"><a @click='goAnchor("page-43")'>4.3 结果目录</a></el-menu-item>
+                  <a @click='goAnchor("page-41")'><el-menu-item index="4-1">4.1 参考文献</el-menu-item></a>
+                  <a @click='goAnchor("page-42")'><el-menu-item index="4-2">4.2 软件与方法说明</el-menu-item></a>
+                  <a @click='goAnchor("page-43")'><el-menu-item index="4-3">4.3 结果目录</el-menu-item></a>
               </el-submenu>
           </el-menu-item-group>
         </el-menu>
