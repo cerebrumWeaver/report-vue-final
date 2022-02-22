@@ -8,4 +8,6 @@ import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
 
 
-createApp(App).use(VueAxios, axios).use(ElementPlus).use(store).use(router).mount("#app");
+// createApp(App).use(VueAxios, axios).use(ElementPlus).use(store).use(router).mount("#app");
+const app = createApp(App)
+app.use(VueAxios, axios).use(ElementPlus).use(store).use(router).mount("#app");

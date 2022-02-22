@@ -7,7 +7,7 @@
          class="el-menu-vertical-demo"
          :collapse="isCollapse"
         >
-          <el-submenu-item index="1">
+          <el-menu-item-group index="1">
             <el-submenu index="1">
               <template #title><i class="el-icon-menu"></i>1 项目信息</template>
               <a @click='goAnchor("page-11")'><el-menu-item index="1-1">1.1 项目简介</el-menu-item></a>
@@ -20,9 +20,9 @@
               <el-menu-item index="1-6"><a @click='goAnchor("page-16")'>1.6 火山图（Figure）</a></el-menu-item>
               <el-menu-item index="1-7"><a @click='goAnchor("page-17")'>1.7 热 图（Figure）</a></el-menu-item>
               </el-submenu>
-          </el-submenu-item>
+          </el-menu-item-group>
 
-          <el-submenu-item index="2">
+          <el-menu-item-group index="2">
             <el-submenu index="2">
               <template #title>
                   <i class="el-icon-menu"></i>2 功能富集分析
@@ -59,23 +59,23 @@
                 </el-menu-item>
               </el-submenu>
             </el-submenu>
-          </el-submenu-item>
+          </el-menu-item-group>
 
-          <el-submenu-item index="3">
+          <el-menu-item-group index="3">
             <el-submenu index="3">
               <template #title><i class="el-icon-menu"></i>3 互作网络分析</template>
               <el-menu-item index="3-1"><a @click='goAnchor("page-31")'>3.1 蛋白互作网络表</a></el-menu-item>
               <el-menu-item index="3-2"><a @click='goAnchor("page-32")'>3.2 蛋白互作网络图</a></el-menu-item>
             </el-submenu>
-          </el-submenu-item>
-          <el-submenu-item index="4">
+          </el-menu-item-group>
+          <el-menu-item-group index="4">
               <el-submenu index="4">
                   <template #title><i class="el-icon-menu"></i>4 附录</template>
                   <el-menu-item index="4-1"><a @click='goAnchor("page-41")'>4.1 参考文献</a></el-menu-item>
                   <el-menu-item index="4-2"><a @click='goAnchor("page-42")'>4.2 软件与方法说明</a></el-menu-item>
                   <el-menu-item index="4-3"><a @click='goAnchor("page-43")'>4.3 结果目录</a></el-menu-item>
               </el-submenu>
-          </el-submenu-item>
+          </el-menu-item-group>
         </el-menu>
         <br>
         <br>
@@ -97,8 +97,7 @@
       <el-main style="padding: 2px; margin: 0;">
           <div class="page-component__scroll" style="height: 100%">
               <el-scrollbar class="scrollbar" id="demo" >
-                  <scroll-container>
-                      <scroll-page id="page-11" class="s-page">
+                      <div id="page-11" class="s-page">
                           <!--                            <h2><b>1 项目信息</b></h2>-->
                           <h2><b>{{ title_1 }}</b></h2>
                           <h3>{{ title_1_1 }}</h3>
@@ -107,14 +106,14 @@
                               <div class="contB">
                               </div>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-12" class="s-page">
+                      <div id="page-12" class="s-page">
                           <h3> {{ title_1_2 }} </h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_2" :key="index">{{ item }}</div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_1_2 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_1_2 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_1_2" :key="index">
@@ -124,14 +123,14 @@
                                   {{ item }}
                               </p>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-13" class="s-page">
+                      <div id="page-13" class="s-page">
                           <h3>{{ title_1_3 }}</h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_3" :key="index">{{ item }}</div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_1_3 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_1_3 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_1_3" :key="index">
@@ -142,9 +141,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-14" class="s-page">
+                      <div id="page-14" class="s-page">
                           <h3>{{ title_1_4 }}</h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_4" :key="index">{{ item }}</div>
@@ -161,14 +160,14 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-15" class="s-page">
+                      <div id="page-15" class="s-page">
                           <h3>{{ title_1_5 }}</h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_4" :key="index">{{ item }}</div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_1_5 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_1_5 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_1_5" :key="index">
@@ -179,9 +178,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-16" class="s-page">
+                      <div id="page-16" class="s-page">
                           <h3>{{ title_1_6 }}</h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_6" :key="index">{{ item }}</div>
@@ -198,9 +197,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-17" class="s-page">
+                      <div id="page-17" class="s-page">
                           <h3>{{ title_1_7 }}</h3>
                           <div class="contentOne">
                               <div class="contA" v-for="(item, index) in info_1_7" :key="index">{{ item }}</div>
@@ -218,9 +217,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-211" class="s-page">
+                      <div id="page-211" class="s-page">
                           <h2><b>{{ title_2 }}</b></h2>
                           <h3>{{ title_2_1 }}</h3>
                           <div class="contentOne">
@@ -230,9 +229,9 @@
                           </div>
                           <h4>2.1.1 GO富集分析表（Table）</h4>
 
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-212" class="s-page">
+                      <div id="page-212" class="s-page">
                           <h4>{{ title_2_1_2 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_1_2" :key="index"> {{ item }} </p></div>
@@ -250,9 +249,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-213" class="s-page">
+                      <div id="page-213" class="s-page">
                           <h4>{{ title_2_1_3 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_1_3" :key="index"> {{ item }} </p></div>
@@ -270,9 +269,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-214" class="s-page">
+                      <div id="page-214" class="s-page">
                           <h4>{{ title_2_1_4 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_1_4" :key="index"> {{ item }} </p></div>
@@ -290,16 +289,16 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-221" class="s-page">
+                      <div id="page-221" class="s-page">
                           <h3>{{ title_2_2 }}</h3>
                           <p v-for="(item, index) in info_2_2" :key="index"> {{ item }} </p>
                           <h3>{{ title_2_2_1 }}</h3>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_2_1" :key="index">{{ item }}</p></div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_2_2_1 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_2_2_1 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_2_2_1" :key="index">
@@ -309,9 +308,9 @@
                                   {{ item }}
                               </p>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-222" class="s-page">
+                      <div id="page-222" class="s-page">
                           <h4>{{ title_2_2_2 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_2_2" :key="index">{{ item }}</p></div>
@@ -328,9 +327,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-223" class="s-page">
+                      <div id="page-223" class="s-page">
                           <h4>{{ title_2_2_3 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_2_3" :key="index">{{ item }}</p></div>
@@ -347,9 +346,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-224" class="s-page">
+                      <div id="page-224" class="s-page">
                           <h4>{{ title_2_2_4 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_2_4" :key="index">{{ item }}</p></div>
@@ -366,9 +365,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-225" class="s-page">
+                      <div id="page-225" class="s-page">
                           <h4>{{ title_2_2_5 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_2_5" :key="index">{{ item }}</p></div>
@@ -385,16 +384,16 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-231" class="s-page">
+                      <div id="page-231" class="s-page">
                           <h3>{{ title_2_3 }}</h3>
                           <p v-for="(item, index) in info_2_2" :key="index"> {{ item }} </p>
                           <h3>{{ title_2_3_1 }}</h3>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_3_1" :key="index">{{ item }}</p></div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_2_3_1 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_2_3_1 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_2_3_1" :key="index">
@@ -405,9 +404,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-232" class="s-page">
+                      <div id="page-232" class="s-page">
                           <h4>{{ title_2_3_2 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_2_3_2" :key="index">{{ item }}</p></div>
@@ -424,16 +423,16 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-31" class="s-page">
+                      <div id="page-31" class="s-page">
                           <h3>{{ title_3 }}</h3>
                           <p v-for="(item, index) in info_3" :key="index"> {{ item }} </p>
                           <h3>{{ title_3_1 }}</h3>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_3_1" :key="index">{{ item }}</p></div>
                               <br/>
-                              <div class="contB"><h5>{{ table_title_3_1 }}</h5>
+                              <div class="contB" style="padding: 20px"><h5>{{ table_title_3_1 }}</h5>
                                   <table01></table01>
                               </div>
                               <p class="description" v-for="(item, index) in table_description_3_1" :key="index">
@@ -444,9 +443,9 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-32" class="s-page">
+                      <div id="page-32" class="s-page">
                           <h4>{{ title_3_2 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_3_2" :key="index">{{ item }}</p></div>
@@ -463,17 +462,17 @@
                               </p>
                               <select01></select01>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-41" class="s-page">
+                      <div id="page-41" class="s-page">
                           <h2><b>{{ title_4 }}</b></h2>
                           <h4>{{ title_4_1 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_4_1" :key="index">{{ item }}</p></div>
                           </div>
-                      </scroll-page>
+                      </div>
 
-                      <scroll-page id="page-42" class="s-page">
+                      <div id="page-42" class="s-page">
                           <h4>{{ title_4_2 }}</h4>
                           <div class="contentOne">
                               <div class="contA"><p v-for="(item, index) in info_4_2" :key="index">{{ item }}</p></div>
@@ -500,9 +499,7 @@
                                   </div>
                               </div>
                           </div>
-                      </scroll-page>
-
-                  </scroll-container>
+                      </div>
               </el-scrollbar>
               <el-backtop
                       target=".page-component__scroll .el-scrollbar__wrap"
@@ -802,65 +799,43 @@ export default defineComponent({
 
 <style scoped lang="scss">
 
-  .el-header {
-      background-color: #b3c0d1;
-      color: var(--el-text-color-primary);
-      line-height: 60px;
-  }
+.el-header {
+  background-color: #b3c0d1;
+  color: var(--el-text-color-primary);
+  line-height: 60px;
+}
+.homeFooter {
+  background-color: rgba(24, 33, 25, 0.09);
+  height: 30px;
+}
+.el-aside {
+  color: var(--el-text-color-primary);
+}
 
+.contentOne {
+  display: block;
+}
 
-    .scroll-page {
-        display: flex;
-        /* align-items: center;
-        justify-content: center; */
-        height: 50%;
-        width: 100%;
-    }
+.s-page {
+  display: inline;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+h5 {
+  text-align: center;
+}
 
-    .homeFooter {
-        background-color: rgba(24, 33, 25, 0.09);
-        height: 30px;
-    }
-
-
-    .el-aside {
-        color: var(--el-text-color-primary);
-    }
-
-    .contentOne {
-        display: block;
-        /* height: 250px; */
-    }
-
-    .s-page {
-        /*width: 180px;
-        height: 180px;
-        background-color: green;
-        margin-top: 20px;*/
-        height: 100px;
-        /*background: #BBE8F2;*/
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: left;
-    }
-
-    h5 {
-        text-align: center;
-    }
-
-    .noprint {
-        /*display: none;*/
-    }
-
-    p, .contA {
-        text-indent: 2em;
-        line-height: 200%;
-    }
-    .scrollbar {
-        //height: calc(100vh - 60px);
-    }
-    .el-scrollbar__wrap {
-        overflow-x: hidden;
-    }
+p, .contA {
+  text-indent: 2em;
+  line-height: 200%;
+}
+.scrollbar {
+  //height: calc(100vh - 60px);
+}
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
 </style>
